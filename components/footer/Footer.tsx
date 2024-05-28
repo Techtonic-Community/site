@@ -14,7 +14,6 @@ const Footer: FC<BoxProps> = (props) => {
 
   return (
     <VStack
-      as="footer"
       alignItems="center"
       spacing="5"
       borderTop="1px"
@@ -40,10 +39,10 @@ const Footer: FC<BoxProps> = (props) => {
             display={{ base: "none", md: "block" }}
           >
             TechTonic Community
+            <div>Crafted by Palash</div>
           </Heading>
         </div>
       </Center>
-      <span>Crafted by Palash</span>
     </VStack>
   );
 };

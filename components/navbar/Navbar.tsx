@@ -67,8 +67,8 @@ const Navbar: FC<NavbarProps> = ({ routes, ...props }) => {
             justifyContent="end"
             alignItems="center"
           >
-            <Flex as="nav">
-              <Stack as="ul" listStyleType="none" direction="row" spacing="6">
+            <Flex>
+              <Stack listStyleType="none" direction="row" spacing="6">
                 {routes.map((route) => (
                   <Box key={route.path}>
                     <Link fontSize="sm" fontWeight="semibold" href={route.path}>
@@ -79,7 +79,7 @@ const Navbar: FC<NavbarProps> = ({ routes, ...props }) => {
               </Stack>
             </Flex>
             <Center height="6" pl="4">
-              <Divider orientation="vertical" borderColor="white"/>
+              <Divider orientation="vertical" borderColor="white" />
             </Center>
             <Flex pl="4" alignItems="center">
               <LinkBox

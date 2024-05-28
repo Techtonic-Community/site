@@ -2,11 +2,11 @@ import Features from "../components/features/Features";
 import Hero from "../components/hero/Hero";
 import Section from "../components/utils/Section";
 import Tweets from "../components/tweets/Tweets";
-import DefaultLayout from "../Wrapper/DefaultWrapper";
+import DefaultWrapper from "../Wrapper/DefaultWrapper";
 
 const Home = () => {
   return (
-    <DefaultLayout>
+    <DefaultWrapper>
       <Hero />
       <Features />
       <Section
@@ -16,7 +16,7 @@ const Home = () => {
         text="Hustle in life and Skilled Up. Make things happen and get hired by top companies."
       />
       <Tweets />
-    </DefaultLayout>
+    </DefaultWrapper>
   );
 };
 

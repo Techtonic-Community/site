@@ -18,17 +18,16 @@ const Tweets = () => {
         title="Loved by communities"
         text="Be a undivided part of the community and grow together."
       />
-      <Box
-        as={Marquee}
+      <Marquee
         gradientColor={[r, g, b] as any}
         gradientWidth={gradientWidth}
-        speed={30}
+        speed={100}
         pauseOnHover
       >
         {tweets.map((tweet, index) => (
           <Tweet key={index} tweet={tweet} mr="3" />
         ))}
-      </Box>
+      </Marquee>
     </Box>
   );
 };

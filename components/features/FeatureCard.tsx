@@ -49,7 +49,6 @@ const FeatureCard: FC<FeatureCardProps> = ({
           {icon}
         </Flex>
         <Heading
-          as="h3"
           fontSize="lg"
           color={useColorModeValue("gray.600", "gray.200")}
         >

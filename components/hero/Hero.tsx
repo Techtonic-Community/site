@@ -8,7 +8,7 @@ import {
   Text,
   useColorModeValue
 } from "@chakra-ui/react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { RiArrowRightLine } from "react-icons/ri";
 
 const Hero = () => {
@@ -24,7 +24,6 @@ const Hero = () => {
       align="center"
     >
       <Heading
-        as="h1"
         fontSize={{ base: "6xl", md: "7xl" }}
         color={useColorModeValue("gray.700", "gray.100")}
         textAlign="center"
@@ -34,7 +33,7 @@ const Hero = () => {
         blendMode="luminosity"
       >
         Hey, Developers <br />
-        <Box as="span" color={useColorModeValue("purple.600", "purple.300")}>
+        <Box color={useColorModeValue("purple.600", "purple.300")}>
           Welcome to the Community
         </Box>
       </Heading>
@@ -65,7 +64,7 @@ const Hero = () => {
           border="1px"
           borderColor={useColorModeValue("white", "whiteAlpha.300")}
           borderRadius="full"
-          rightIcon={<Icon as={RiArrowRightLine} />}
+          rightIcon={<RiArrowRightLine />}
           onClick={() => router.push("/login")}
         >
           Getting started

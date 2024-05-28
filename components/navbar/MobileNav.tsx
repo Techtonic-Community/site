@@ -34,7 +34,7 @@ const MobileOptionsMenu: FC<MobileOptionsMenuProps> = ({ routes }) => {
           borderRadius="full"
           border="1px"
           borderColor={useColorModeValue("gray.200", "gray.700")}
-          icon={<Icon boxSize="5" color="gray.400" as={RiMore2Fill} />}
+          icon={<RiMore2Fill color="white" />}
         />
       </PopoverTrigger>
       <Portal>
@@ -42,22 +42,25 @@ const MobileOptionsMenu: FC<MobileOptionsMenuProps> = ({ routes }) => {
           <PopoverCloseButton size="md" color="gray.600" />
           <PopoverBody>
             <UnorderedList
-              as="ul"
               listStyleType="none"
               fontWeight="semibold"
               spacing="4"
               mx="0"
             >
               {routes.map((route) => (
-                <ListItem as="li" key={route.path}>
+                <ListItem key={route.path}>
                   <Link href={route.path}>{route.title}</Link>
                 </ListItem>
               ))}
-                <ListItem>
-                  <Link href="https://github.com?PalashCoder" isExternal target="_blank">
-                    GitHub
-                  </Link>
-                </ListItem>
+              <ListItem>
+                <Link
+                  href="https://github.com?PalashCoder"
+                  isExternal
+                  target="_blank"
+                >
+                  GitHub
+                </Link>
+              </ListItem>
             </UnorderedList>
           </PopoverBody>
         </PopoverContent>

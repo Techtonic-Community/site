@@ -18,7 +18,6 @@ const Section: FC<SectionProps> = ({ title, subtitle, text, ...props }) => {
     <Stack spacing="4" maxW="container.md" mx="auto" py="12" {...props}>
       {subtitle && (
         <Heading
-          as="h3"
           fontSize={{ base: "lg", md: "xl" }}
           textAlign="center"
           textTransform="uppercase"
