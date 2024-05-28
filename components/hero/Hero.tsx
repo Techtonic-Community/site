@@ -3,10 +3,8 @@ import {
   Button,
   Flex,
   Heading,
-  Icon,
   Stack,
-  Text,
-  useColorModeValue
+  Text
 } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { RiArrowRightLine } from "react-icons/ri";
@@ -25,7 +23,7 @@ const Hero = () => {
     >
       <Heading
         fontSize={{ base: "6xl", md: "7xl" }}
-        color={useColorModeValue("gray.700", "gray.100")}
+        color={"gray.100"}
         textAlign="center"
         textTransform="uppercase"
         lineHeight="0.9"
@@ -33,14 +31,12 @@ const Hero = () => {
         blendMode="luminosity"
       >
         Hey, Developers <br />
-        <Box color={useColorModeValue("purple.600", "purple.300")}>
-          Welcome to the Community
-        </Box>
+        <Box color={"purple.300"}>Welcome to the Community</Box>
       </Heading>
       <Text
         fontSize={{ base: "lg", md: "2xl" }}
         fontWeight="medium"
-        color={useColorModeValue("gray.600", "gray.100")}
+        color={"gray.100"}
         textAlign="center"
         letterSpacing="tighter"
         zIndex="1"
@@ -59,10 +55,10 @@ const Hero = () => {
           maxW="60"
           size="lg"
           colorScheme="whiteAlpha"
-          color={useColorModeValue("gray.600", "white")}
+          color={"white"}
           shadow="lg"
           border="1px"
-          borderColor={useColorModeValue("white", "whiteAlpha.300")}
+          borderColor={"whiteAlpha.300"}
           borderRadius="full"
           rightIcon={<RiArrowRightLine />}
           onClick={() => router.push("/login")}

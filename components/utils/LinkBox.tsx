@@ -1,10 +1,10 @@
-import { FC } from "react";
-import NextLink from "next/link";
 import {
   LinkBox as ChakraLinkBox,
-  LinkOverlay,
   LinkBoxProps as ChakraLinkBoxProps,
+  LinkOverlay,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
+import { FC } from "react";
 import { WithChildren } from "../../types";
 
 interface LinkBoxProps extends WithChildren, ChakraLinkBoxProps {

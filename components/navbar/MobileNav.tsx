@@ -1,6 +1,5 @@
 import {
   PopoverTrigger as ChakraPopoverTrigger,
-  Icon,
   IconButton,
   ListItem,
   Popover,
@@ -8,8 +7,7 @@ import {
   PopoverCloseButton,
   PopoverContent,
   Portal,
-  UnorderedList,
-  useColorModeValue,
+  UnorderedList
 } from "@chakra-ui/react";
 import { FC } from "react";
 import { RiMore2Fill } from "react-icons/ri";
@@ -33,7 +31,7 @@ const MobileOptionsMenu: FC<MobileOptionsMenuProps> = ({ routes }) => {
           boxShadow="sm"
           borderRadius="full"
           border="1px"
-          borderColor={useColorModeValue("gray.200", "gray.700")}
+          borderColor={"gray.700"}
           icon={<RiMore2Fill color="white" />}
         />
       </PopoverTrigger>

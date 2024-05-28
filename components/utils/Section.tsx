@@ -2,8 +2,7 @@ import {
   BoxProps,
   Heading,
   Stack,
-  Text,
-  useColorModeValue
+  Text
 } from "@chakra-ui/react";
 import { FC } from "react";
 
@@ -40,7 +39,7 @@ const Section: FC<SectionProps> = ({ title, subtitle, text, ...props }) => {
         fontSize={{ base: "lg", md: "xl" }}
         fontWeight="medium"
         textAlign="center"
-        color={useColorModeValue("gray.500", "gray.200")}
+        color={"gray.200"}
         letterSpacing="tight"
       >
         {text}

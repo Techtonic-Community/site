@@ -2,22 +2,19 @@ import {
   BoxProps,
   Center,
   Heading,
-  useColorModeValue,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { FC } from "react";
 import logo from "../../public/static/logo.png";
 
 const Footer: FC<BoxProps> = (props) => {
-  const textColor = useColorModeValue("gray.500", "gray.300");
-
   return (
     <VStack
       alignItems="center"
       spacing="5"
       borderTop="1px"
-      borderColor={useColorModeValue("gray.200", "gray.700")}
+      borderColor={"gray.700"}
       mt="12"
       py="8"
       {...props}

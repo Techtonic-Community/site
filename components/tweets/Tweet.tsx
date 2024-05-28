@@ -1,22 +1,19 @@
-import { FC } from "react";
 import {
   Box,
   Image,
   LinkBoxProps,
   Stack,
-  Text,
-  useColorModeValue,
+  Text
 } from "@chakra-ui/react";
-import  LinkBox from "../utils/LinkBox";
+import { FC } from "react";
 import { TweetData } from "../../types";
+import LinkBox from "../utils/LinkBox";
 
 interface TweetProps extends LinkBoxProps {
   tweet: TweetData;
 }
 
 export const Tweet: FC<TweetProps> = ({ tweet, ...props }) => {
-  const fontColor = useColorModeValue("gray.500", "gray.300");
-
   return (
     <LinkBox
       href={tweet.url}
@@ -24,9 +21,9 @@ export const Tweet: FC<TweetProps> = ({ tweet, ...props }) => {
       w="full"
       maxW={{ base: "xs", lg: "md" }}
       h="full"
-      bgColor={useColorModeValue("gray.50", "gray.700")}
+      bgColor={"gray.700"}
       border="1px"
-      borderColor={useColorModeValue("gray.100", "gray.600")}
+      borderColor={"gray.600"}
       borderRadius="3xl"
       p="7"
       {...props}
@@ -40,12 +37,12 @@ export const Tweet: FC<TweetProps> = ({ tweet, ...props }) => {
             boxSize="12"
             mr="2"
           />
-          <Box fontSize="sm" color={fontColor}>
+          <Box fontSize="sm" color={"gray.300"}>
             <Text>{tweet.author.name}</Text>
             <Text>{tweet.author.bio}</Text>
           </Box>
         </Stack>
-        <Text color={fontColor}>{tweet.text}</Text>
+        <Text color={"gray.300"}>{tweet.text}</Text>
       </Stack>
     </LinkBox>
   );
