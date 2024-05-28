@@ -14,9 +14,8 @@ Now, to clone this repository to your local machine, copy the url of the forked 
 Now, open a terminal and run the following command:
 
 ```
-git clone <copied- url> Techtonic_Community
+git clone https://github.com/Techtonic-Community/site.git Techtonic_Community
 ```
-Here, replace `<copied-url>` with the url of the forked repository you just copied.
 
 ## Create a branch
 

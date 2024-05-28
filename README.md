@@ -9,33 +9,23 @@
 <br>
 
 <h2 align="center">What is Techtonic Community?</h2>
-<p align="center">TeamSync is a fully office specific website (curretly) where any organization can create their own customize workspace to Note their work details, documentations and their software requirments and various things. The mentioned characterists are the initial offerings. It also will develop its BugTracking inside this for all the officve working notes and also a video confarance zone for the the office meetings.</p>
+<p align="center">Techtonic Community informs about the latest job opportunities, internships, and valuable resources. Our community is a dynamic space where professionals, students, and enthusiasts come together to share and explore opportunities in various fields.
+<ul>
+<li>🌟 Latest Job Openings and Internship Opportunities Details (Daily).</li>
+<li>📚 Comprehensive Notes.</li>
+<li>💻 Coding Resources and Tech Insights.</li>
+<li>🤝 Supportive Community for Doubt Resolution.</li>
+<li>🌐 Networking and Skill Enhancement.</li>
+</ul>
+</p>
 
 
 <div  align="center" >
-<a href="https://Techtonic_Community.vercel.app"><img alt="C" src="https://img.shields.io/badge/Production%20Release-07C160?style=for-the-badge&logo=vercel&logoColor=white"></a> <a href="https://github.com/sponsors/iamrealpalash"><img alt="Sponsor Palash" src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white"></a>
+<a href="https://techtonic.palashdas.tech"><img alt="C" src="https://img.shields.io/badge/Production%20Release-07C160?style=for-the-badge&logo=vercel&logoColor=white"></a> <a href="https://github.com/sponsors/palashcoder"><img alt="Sponsor Palash" src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white"></a>
 </div>
 <br>
 <div align="center">
-    <img alt="Contributor over time" src="https://contributor-overtime-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=iamrealpalash/Techtonic_Community">
-</div>
-
-<div align="center">
-    
-## Tech Stack  💻
-
-<p >
-    <a href="https://nextjs.org/"><img alt="C" src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"></a>
-    <a href="https://docs.github.com/en"><img alt="C" src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
-    <a href="https://opensource.guide/how-to-contribute/"><img alt="C" src="https://img.shields.io/badge/Open%20Source-%23F05032.svg?style=for-the-badge&logo=open-source-initiative&logoColor=white"></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img alt="C" src="https://img.shields.io/badge/CSS-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"></a>
-    <a href="https://www.canva.com/designschool/tutorials/getting-started/"><img alt="C" src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=canva&logoColor=white"></a>
-    <a href="https://help.figma.com/hc/en-us/categories/360002051613-Get-started"><img alt="C" src="https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"></a>
-    <a href="https://docs.github.com/en/actions"><img alt="C" src="https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&logo=github-actions&logoColor=white"></a>
-    <a href="https://docs.github.com/en/actions"><img alt="C" src="https://img.shields.io/badge/.ENV-ECD53F?logo=dotenv&logoColor=000&style=for-the-badge"></a>
-    
-
-</p>
+    <img alt="Contributor over time" src="https://contributor-overtime-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=Techtonic-Community/site">
 </div>
 
 </br>
