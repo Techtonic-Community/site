@@ -17,19 +17,19 @@ const navdata = [
 export default navdata;
 
 export const navsocial = [
-    {
-        title:"GitHub",
-        Icon:RiGithubFill,
-        path:"https://github.com/PalashCoder"
-    },
-    {
-        title:"LinkedIn",
-        Icon:RiLinkedinBoxFill,
-        path:"https://github.com/PalashCoder"
-    },
-    {
-        title:"Telegram",
-        Icon:RiTelegramFill,
-        path:"https://github.com/PalashCoder"
-    }
+  {
+    title: "GitHub",
+    Icon: RiGithubFill,
+    path: "https://github.com/PalashCoder",
+  },
+  {
+    title: "LinkedIn",
+    Icon: RiLinkedinBoxFill,
+    path: "https://github.com/PalashCoder",
+  },
+  {
+    title: "Telegram",
+    Icon: RiTelegramFill,
+    path: "https://github.com/PalashCoder",
+  },
 ];

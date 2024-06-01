@@ -1,3 +1,5 @@
+import data, { navsocial } from "@/data/navdata";
+import { Link } from "@/utility/Link";
 import {
   Divider,
   IconButton,
@@ -7,8 +9,6 @@ import {
   MenuList,
 } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import data, { navsocial } from "@/data/navdata";
-import { Link } from "@/utility/Link";
 
 const MobileNav = () => {
   return (

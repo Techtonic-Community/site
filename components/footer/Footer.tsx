@@ -1,14 +1,14 @@
 "use client";
 import logo from "@/public/logo.png";
 import {
-    Box,
-    chakra,
-    Container,
-    Link,
-    Stack,
-    Text,
-    VisuallyHidden,
-    VStack
+  Box,
+  chakra,
+  Container,
+  Link,
+  Stack,
+  Text,
+  VisuallyHidden,
+  VStack,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { ReactNode } from "react";
