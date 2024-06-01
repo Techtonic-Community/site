@@ -1,6 +1,6 @@
-import Features from "@/components/Hero/Features";
-import Hero from "@/components/Hero/Hero";
-import Wrapper from "@/provider/wrapper";
+import Features from "../components/Hero/Features";
+import Hero from "../components/Hero/Hero";
+import Wrapper from "../provider/wrapper";
 
 const page = () => {
   return (
