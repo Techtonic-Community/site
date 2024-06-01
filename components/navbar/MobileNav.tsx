@@ -20,14 +20,14 @@ const MobileNav = () => {
         variant="outline"
       />
       <MenuList>
-        {data.map((data) => (
-          <Link href={data.path}>
+        {data.map((data,index) => (
+          <Link href={data.path} key={index}>
             <MenuItem>{data.title}</MenuItem>
           </Link>
         ))}
         <Divider orientation="horizontal" />
-        {navsocial.map((data) => (
-          <Link href={data.path}>
+        {navsocial.map((data,index) => (
+          <Link href={data.path} key={index}>
             <MenuItem>Join {data.title}</MenuItem>
           </Link>
         ))}

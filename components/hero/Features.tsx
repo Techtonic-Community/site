@@ -30,6 +30,7 @@ const Features = () => {
                 "linear(104.28deg, rgb(38, 34, 71) 1.24%, purple.500 32.96%, rgb(38, 34, 71) 68.22%)"
               }
               borderRadius="3xl"
+              key={title}
             >
               <Box
                 position="absolute"
