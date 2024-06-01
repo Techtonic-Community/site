@@ -1,6 +1,6 @@
-import data, { navsocial } from "@/data/navdata";
-import logo from "@/public/logo.png";
-import { Link } from "@/utility/Link";
+import data, { navsocial } from "../../data/navdata";
+import logo from "/public/logo.png";
+import { Link } from "../../utility/Link";
 import { Box, Center, Divider, Flex, Heading, Stack } from "@chakra-ui/react";
 import Image from "next/image";
 import MobileNav from "./MobileNav";

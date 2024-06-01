@@ -1,5 +1,5 @@
-import { features } from "@/data/feature";
-import Container from "@/utility/HeaderContainer";
+import { features } from "../../data/feature";
+import Container from "../../utility/HeaderContainer";
 import {
   Box,
   Center,

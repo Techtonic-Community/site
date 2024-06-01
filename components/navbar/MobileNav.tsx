@@ -1,5 +1,5 @@
-import data, { navsocial } from "@/data/navdata";
-import { Link } from "@/utility/Link";
+import data, { navsocial } from "../../data/navdata";
+import { Link } from "../../utility/Link";
 import {
   Divider,
   IconButton,

@@ -1,10 +1,9 @@
 "use client";
-import logo from "@/public/logo.png";
+import logo from "../../public/logo.png";
 import {
   Box,
   chakra,
   Container,
-  Link,
   Stack,
   Text,
   VisuallyHidden,
@@ -13,6 +12,7 @@ import {
 import Image from "next/image";
 import { ReactNode } from "react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 const SocialButton = ({
   children,
