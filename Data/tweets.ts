@@ -7,7 +7,7 @@ export const tweets = [
         avatar:
           "https://pbs.twimg.com/profile_images/1217652661962661888/WfiUNjzP_400x400.jpg",
       },
-      url: "https://twitter.com/rauchg",
+      url: "https://twitter.com/coderpalash",
     },
     {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
@@ -17,7 +17,7 @@ export const tweets = [
         avatar:
           "https://pbs.twimg.com/profile_images/1217652661962661888/WfiUNjzP_400x400.jpg",
       },
-      url: "https://twitter.com/leeerob",
+      url: "https://twitter.com/coderpalash",
     },
     {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
@@ -27,7 +27,7 @@ export const tweets = [
         avatar:
           "https://pbs.twimg.com/profile_images/1217652661962661888/WfiUNjzP_400x400.jpg",
       },
-      url: "https://twitter.com/pacocoursey",
+      url: "https://twitter.com/coderpalash",
     },
     {
       text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.",
@@ -37,7 +37,7 @@ export const tweets = [
         avatar:
           "https://pbs.twimg.com/profile_images/1217652661962661888/WfiUNjzP_400x400.jpg",
       },
-      url: "https://twitter.com/brian_lovin",
+      url: "https://twitter.com/coderpalash",
     },
     {
       text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
@@ -47,7 +47,7 @@ export const tweets = [
         avatar:
           "https://pbs.twimg.com/profile_images/1217652661962661888/WfiUNjzP_400x400.jpg",
       },
-      url: "https://twitter.com/thesegunadebayo",
+      url: "https://twitter.com/coderpalash",
     },
     {
       text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
@@ -57,7 +57,7 @@ export const tweets = [
         avatar:
           "https://pbs.twimg.com/profile_images/1217652661962661888/WfiUNjzP_400x400.jpg",
       },
-      url: "https://twitter.com/peduarte",
+      url: "https://twitter.com/coderpalash",
     },
     {
       text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
@@ -67,6 +67,6 @@ export const tweets = [
         avatar:
           "https://pbs.twimg.com/profile_images/1217652661962661888/WfiUNjzP_400x400.jpg",
       },
-      url: "https://twitter.com/kentcdodds",
+      url: "https://twitter.com/coderpalash",
     },
   ];
