@@ -1,70 +1,39 @@
 import {
-  PopoverTrigger as ChakraPopoverTrigger,
+  Divider,
   IconButton,
-  ListItem,
-  Popover,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  Portal,
-  UnorderedList
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
 } from "@chakra-ui/react";
-import { FC } from "react";
-import { RiMore2Fill } from "react-icons/ri";
-import { Route, WithChildren } from "../../types";
-import { Link } from "../utils/Link";
+import { RxHamburgerMenu } from "react-icons/rx";
+import data, { navsocial } from "@/data/navdata";
+import { Link } from "@/utility/Link";
 
-interface MobileOptionsMenuProps {
-  routes: Route[];
-}
-
-const PopoverTrigger: FC<WithChildren> = ChakraPopoverTrigger;
-
-const MobileOptionsMenu: FC<MobileOptionsMenuProps> = ({ routes }) => {
+const MobileNav = () => {
   return (
-    <Popover placement="bottom-start">
-      <PopoverTrigger>
-        <IconButton
-          aria-label="Open menu"
-          size="sm"
-          colorScheme="whiteAlpha"
-          boxShadow="sm"
-          borderRadius="full"
-          border="1px"
-          borderColor={"gray.700"}
-          icon={<RiMore2Fill color="white" />}
-        />
-      </PopoverTrigger>
-      <Portal>
-        <PopoverContent maxW="60" p="2" _focus={{ ring: "0" }}>
-          <PopoverCloseButton size="md" color="gray.600" />
-          <PopoverBody>
-            <UnorderedList
-              listStyleType="none"
-              fontWeight="semibold"
-              spacing="4"
-              mx="0"
-            >
-              {routes.map((route) => (
-                <ListItem key={route.path}>
-                  <Link href={route.path}>{route.title}</Link>
-                </ListItem>
-              ))}
-              <ListItem>
-                <Link
-                  href="https://github.com?PalashCoder"
-                  isExternal
-                  target="_blank"
-                >
-                  GitHub
-                </Link>
-              </ListItem>
-            </UnorderedList>
-          </PopoverBody>
-        </PopoverContent>
-      </Portal>
-    </Popover>
+    <Menu>
+      <MenuButton
+        as={IconButton}
+        aria-label="Options"
+        icon={<RxHamburgerMenu />}
+        variant="outline"
+      />
+      <MenuList>
+        {data.map((data) => (
+          <Link href={data.path}>
+            <MenuItem>{data.title}</MenuItem>
+          </Link>
+        ))}
+        <Divider orientation="horizontal" />
+        {navsocial.map((data) => (
+          <Link href={data.path}>
+            <MenuItem>Join {data.title}</MenuItem>
+          </Link>
+        ))}
+      </MenuList>
+    </Menu>
   );
 };
 
-export default MobileOptionsMenu;
+export default MobileNav;

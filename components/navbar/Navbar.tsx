@@ -1,39 +1,21 @@
-import {
-  Box,
-  BoxProps,
-  Center,
-  Container,
-  Divider,
-  Flex,
-  Heading,
-  Icon,
-  Stack,
-} from "@chakra-ui/react";
+import logo from "@/public/logo.png";
+import { Link } from "@/utility/Link";
+import { Box, Center, Divider, Flex, Heading, Stack } from "@chakra-ui/react";
 import Image from "next/image";
-import { FC } from "react";
-import { RiGithubFill } from "react-icons/ri";
-import MobileNav from "../../components/navbar/MobileNav";
-import logo from "../../public/static/logo.png";
-import { Route } from "../../types";
-import { Link } from "../utils/Link";
-import LinkBox from "../utils/LinkBox";
+import data, { navsocial } from "@/data/navdata";
+import MobileNav from "./MobileNav";
 
-interface NavbarProps extends BoxProps {
-  routes: Route[];
-}
-
-const Navbar: FC<NavbarProps> = ({ routes, ...props }) => {
+const Navbar = () => {
   return (
     <Box
       backdropFilter="auto"
-      {...props}
       backdropContrast="85%"
       backdropBlur="20px"
       position="fixed"
       zIndex="10"
       width="full"
     >
-      <Container maxW="8xl" mx="auto" px="4">
+      <Box maxW="8xl" mx="auto" px="4">
         <Flex
           flexDir="row"
           justifyContent="space-between"
@@ -41,7 +23,7 @@ const Navbar: FC<NavbarProps> = ({ routes, ...props }) => {
           py="3"
         >
           <Flex flex="1" alignItems="center">
-            <LinkBox href="/">
+            <Link href="/">
               <Flex alignItems="center" flex={1}>
                 <Image
                   src={logo}
@@ -59,7 +41,7 @@ const Navbar: FC<NavbarProps> = ({ routes, ...props }) => {
                   TechTonic Community
                 </Heading>
               </Flex>
-            </LinkBox>
+            </Link>
           </Flex>
           <Box
             display={{ base: "none", lg: "flex" }}
@@ -69,10 +51,10 @@ const Navbar: FC<NavbarProps> = ({ routes, ...props }) => {
           >
             <Flex>
               <Stack listStyleType="none" direction="row" spacing="6">
-                {routes.map((route) => (
-                  <Box key={route.path}>
-                    <Link fontSize="sm" fontWeight="semibold" href={route.path}>
-                      {route.title}
+                {data.map((data) => (
+                  <Box key={data.path}>
+                    <Link href={data.path} target="_blank">
+                      {data.title}
                     </Link>
                   </Box>
                 ))}
@@ -81,17 +63,14 @@ const Navbar: FC<NavbarProps> = ({ routes, ...props }) => {
             <Center height="6" pl="4">
               <Divider orientation="vertical" borderColor="white" />
             </Center>
-            <Flex pl="4" alignItems="center">
-              <LinkBox
-                display="flex"
-                ml="4"
-                color="gray.400"
-                href="https://github.com/PalashCoder"
-                isExternal
-                _hover={{ color: "#d3c7eb" }}
-              >
-                <Icon boxSize="6" as={RiGithubFill} mt="8px" />
-              </LinkBox>
+            <Flex pl="4" alignItems="center" gap="3">
+              {navsocial.map(({ path, title, Icon }) => (
+                <Link href={path} target="_blank">
+                  <Box mt="2px" _hover="#d3c7eb">
+                    <Icon size="25" />
+                  </Box>
+                </Link>
+              ))}
             </Flex>
           </Box>
           <Box
@@ -99,10 +78,10 @@ const Navbar: FC<NavbarProps> = ({ routes, ...props }) => {
             flex="1"
             justifyContent="end"
           >
-            <MobileNav routes={routes} />
+            <MobileNav />
           </Box>
         </Flex>
-      </Container>
+      </Box>
     </Box>
   );
 };

@@ -1,9 +1,4 @@
-import {
-  BoxProps,
-  Heading,
-  Stack,
-  Text
-} from "@chakra-ui/react";
+import { BoxProps, Heading, Stack, Text } from "@chakra-ui/react";
 import { FC } from "react";
 
 interface SectionProps extends BoxProps {
@@ -28,7 +23,7 @@ const Section: FC<SectionProps> = ({ title, subtitle, text, ...props }) => {
       <Heading
         fontSize={{ base: "4xl", md: "5xl" }}
         textAlign="center"
-        bgGradient="linear(to-r, purple.400, orange.400)"
+        bgGradient="linear(to-r, purple.500, cyan.500)"
         bgClip="text"
         textTransform="uppercase"
         lineHeight="1"

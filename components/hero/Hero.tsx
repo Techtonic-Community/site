@@ -1,17 +1,8 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Stack,
-  Text
-} from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
+import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import { RiArrowRightLine } from "react-icons/ri";
 
 const Hero = () => {
-  const router = useRouter();
-
   return (
     <Stack
       position="relative"
@@ -51,27 +42,28 @@ const Hero = () => {
         blendMode="luminosity"
         zIndex="1"
       >
-        <Button
-          maxW="60"
-          size="lg"
-          colorScheme="whiteAlpha"
-          color={"white"}
-          shadow="lg"
-          border="1px"
-          borderColor={"whiteAlpha.300"}
-          borderRadius="full"
-          rightIcon={<RiArrowRightLine />}
-          onClick={() => router.push("/login")}
-        >
-          Getting started
-        </Button>
+        <Link href="/login">
+          <Button
+            maxW="60"
+            size="lg"
+            colorScheme="whiteAlpha"
+            color={"white"}
+            shadow="lg"
+            border="1px"
+            borderColor={"whiteAlpha.300"}
+            borderRadius="full"
+            rightIcon={<RiArrowRightLine />}
+          >
+            Getting started
+          </Button>
+        </Link>
       </Flex>
       <Box
         boxSize="72"
         position="absolute"
         top="0"
         left="0"
-        bg="brand.700"
+        bg="blue.700"
         borderRadius="full"
         filter="blur(90px)"
       />
@@ -80,7 +72,7 @@ const Hero = () => {
         position="absolute"
         bottom="0"
         right="0"
-        bg="pink.700"
+        bg="#553C9A"
         borderRadius="full"
         filter="blur(90px)"
       />
