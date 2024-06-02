@@ -7,8 +7,8 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { features } from "../../data/feature";
-import Container from "../../utility/HeaderContainer";
+import { features } from "../../../data/featuredata";
+import Container from "../../../utility/HeaderContainer";
 
 const Features = () => {
   return (

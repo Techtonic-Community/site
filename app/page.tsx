@@ -1,5 +1,5 @@
-import Features from "../components/Features/Features";
-import Hero from "../components/Hero/Hero";
+import Features from "../components/Home/Features/Features";
+import Hero from "../components/Home/Hero/Hero";
 import Wrapper from "../provider/wrapper";
 
 const page = () => {
