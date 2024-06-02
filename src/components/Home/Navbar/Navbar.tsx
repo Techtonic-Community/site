@@ -1,7 +1,7 @@
-import Socials from "@/components/utility/Socials";
+import Socials from "../../utility/Socials";
 import { Box, Center, Divider, Flex, Heading, Stack } from "@chakra-ui/react";
 import Image from "next/image";
-import data from "../../data/navdata";
+import data from "../../../data/navdata";
 import { Link } from "../../utility/Link";
 import MobileNav from "./MobileNav";
 import logo from "/public/logo.png";

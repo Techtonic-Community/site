@@ -1,6 +1,6 @@
-import Wrapper from "@/provider/wrapper";
-import Container from "@/components/utility/HeaderContainer";
-import { Link } from "@/components/utility/Link";
+import Wrapper from "../provider/wrapper";
+import Container from "../components/utility/HeaderContainer";
+import { Link } from "../components/utility/Link";
 import { Box, Center } from "@chakra-ui/react";
 import { RiArrowRightLine } from "react-icons/ri";
 
