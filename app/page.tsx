@@ -1,4 +1,4 @@
-import Features from "../components/Hero/Features";
+import Features from "../components/Features/Features";
 import Hero from "../components/Hero/Hero";
 import Wrapper from "../provider/wrapper";
 
