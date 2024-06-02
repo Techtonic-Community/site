@@ -1,6 +1,6 @@
 "use client";
-import data from "@/data/navdata";
-import Socials from "@/utility/Socials";
+import data from "../../../data/navdata";
+import Socials from "../../utility/Socials";
 import { Box, Container, Flex, Stack, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
 import logo from "../../public/logo.png";

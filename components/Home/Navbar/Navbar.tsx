@@ -1,4 +1,4 @@
-import Socials from "@/utility/Socials";
+import Socials from "@/components/utility/Socials";
 import { Box, Center, Divider, Flex, Heading, Stack } from "@chakra-ui/react";
 import Image from "next/image";
 import data from "../../data/navdata";

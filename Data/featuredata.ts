@@ -1,6 +1,6 @@
 import { RiAppsFill, RiFingerprintFill, RiStackFill } from "react-icons/ri";
 
-export const features = [
+export const featuresdata = [
   {
     title: "Job and Internship Opportunity Details",
     description:

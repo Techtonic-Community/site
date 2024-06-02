@@ -1,4 +1,4 @@
-import { navsocial } from "@/data/navdata";
+import { navsocial } from "../../data/navdata";
 import { Box, Flex } from "@chakra-ui/react";
 import { Link } from "./Link";
 

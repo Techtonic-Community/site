@@ -7,8 +7,8 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { features } from "../../../data/featuredata";
-import Container from "../../../utility/HeaderContainer";
+import { featuresdata } from "../../../data/featuredata";
+import Container from "../../utility/HeaderContainer";
 
 const Features = () => {
   return (
@@ -24,7 +24,7 @@ const Features = () => {
           maxWidth="8xl"
           pt="5"
         >
-          {features.map(({ title, description, Icon }, index) => (
+          {featuresdata.map(({ title, description, Icon }, index) => (
             <Box
               position="relative"
               bgGradient={
