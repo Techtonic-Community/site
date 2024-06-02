@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import data, { navsocial } from "../../../data/navdata";
-import { Link } from "../../utility/Link";
+import { Link } from "../utility/Link";
 
 const MobileNav = () => {
   return (

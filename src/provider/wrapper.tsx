@@ -1,6 +1,6 @@
 import { Box, Container } from "@chakra-ui/react";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Home/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 const Wrapper = ({
   children,
