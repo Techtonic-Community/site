@@ -8,6 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Techtonic Community | Home",
   description: "A Community fo all.",
+  icons: {
+    icon: ["./favicon.ico"],
+    apple: ["./favicon.ico"],
+    shortcut: ["./favicon.ico"],
+  },
 };
 
 export default function RootLayout({
@@ -16,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="dark !scroll-smooth">
       <body className={`${inter.className} dark:bg-gray-900 dark:text-white`}>
         <Providers>{children}</Providers>
       </body>

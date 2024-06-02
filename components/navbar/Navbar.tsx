@@ -1,9 +1,10 @@
-import data, { navsocial } from "../../data/navdata";
-import logo from "/public/logo.png";
-import { Link } from "../../utility/Link";
+import Socials from "@/utility/Socials";
 import { Box, Center, Divider, Flex, Heading, Stack } from "@chakra-ui/react";
 import Image from "next/image";
+import data from "../../data/navdata";
+import { Link } from "../../utility/Link";
 import MobileNav from "./MobileNav";
+import logo from "/public/logo.png";
 
 const Navbar = () => {
   return (
@@ -53,7 +54,7 @@ const Navbar = () => {
               <Stack listStyleType="none" direction="row" spacing="6">
                 {data.map((data) => (
                   <Box key={data.path}>
-                    <Link href={data.path} target="_blank">
+                    <Link href={data.path} target={data.target}>
                       {data.title}
                     </Link>
                   </Box>
@@ -63,15 +64,7 @@ const Navbar = () => {
             <Center height="6" pl="4">
               <Divider orientation="vertical" borderColor="white" />
             </Center>
-            <Flex pl="4" alignItems="center" gap="3">
-              {navsocial.map(({ path, title, Icon }) => (
-                <Link href={path} target="_blank" key={title}>
-                  <Box mt="2px" _hover="#d3c7eb">
-                    <Icon size="25" />
-                  </Box>
-                </Link>
-              ))}
-            </Flex>
+            <Socials />
           </Box>
           <Box
             display={{ base: "flex", lg: "none" }}

@@ -6,12 +6,24 @@ import {
 
 const navdata = [
   {
+    title: "Home",
+    path: "/",
+    target: "",
+  },
+  {
+    title: "About",
+    path: "/about",
+    target: "",
+  },
+  {
     title: "Opportunities",
     path: "/opportunities",
+    target: "",
   },
   {
     title: "Blog",
     path: "/blog",
+    target: "_blank",
   },
 ];
 export default navdata;

@@ -1,15 +1,15 @@
 import { BoxProps, Heading, Stack, Text } from "@chakra-ui/react";
 import { FC } from "react";
 
-interface SectionProps extends BoxProps {
+interface ContainerProps extends BoxProps {
   title: string;
   subtitle?: string;
   text: string;
 }
 
-const Section: FC<SectionProps> = ({ title, subtitle, text, ...props }) => {
+const Container: FC<ContainerProps> = ({ title, subtitle, text, ...props }) => {
   return (
-    <Stack spacing="4" maxW="container.md" mx="auto" py="12" {...props}>
+    <Stack spacing="4" maxW="container.md" mx="auto" pt="12" {...props}>
       {subtitle && (
         <Heading
           fontSize={{ base: "lg", md: "xl" }}
@@ -43,4 +43,4 @@ const Section: FC<SectionProps> = ({ title, subtitle, text, ...props }) => {
   );
 };
 
-export default Section;
+export default Container;

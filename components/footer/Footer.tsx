@@ -1,50 +1,10 @@
 "use client";
-import logo from "../../public/logo.png";
-import {
-  Box,
-  chakra,
-  Container,
-  Stack,
-  Text,
-  VisuallyHidden,
-  VStack,
-} from "@chakra-ui/react";
+import data from "@/data/navdata";
+import Socials from "@/utility/Socials";
+import { Box, Container, Flex, Stack, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
-import { ReactNode } from "react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import Link from "next/link";
-
-const SocialButton = ({
-  children,
-  label,
-  href,
-}: {
-  children: ReactNode;
-  label: string;
-  href: string;
-}) => {
-  return (
-    <chakra.button
-      bg={"blackAlpha.100"}
-      rounded={"full"}
-      w={8}
-      h={8}
-      cursor={"pointer"}
-      as={"a"}
-      href={href}
-      display={"inline-flex"}
-      alignItems={"center"}
-      justifyContent={"center"}
-      transition={"background 0.3s ease"}
-      _hover={{
-        bg: "blackAlpha.200",
-      }}
-    >
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </chakra.button>
-  );
-};
+import logo from "../../public/logo.png";
+import { Link } from "../../utility/Link";
 
 export default function Footer() {
   return (
@@ -54,7 +14,7 @@ export default function Footer() {
       borderTop="1px"
       borderColor={"gray.700"}
       mt="12"
-      py="8"
+      py="5"
     >
       <Box bg={"dark"} color={"dark"} py={5} mt={30}>
         <Container
@@ -66,15 +26,20 @@ export default function Footer() {
           align={"center"}
         >
           <Image src={logo} height={100} width={100} alt="company" />
-          <Stack direction={"row"} spacing={6}>
-            <Link href={"/"}>Home</Link>
-            <Link href={"/about"}>About</Link>
-            <Link href={"/blog"}>Blog</Link>
-            <Link href={"/opportunities"}>Opportunities</Link>
-          </Stack>
+          <Flex>
+            <Stack listStyleType="none" direction="row" spacing="6">
+              {data.map((data) => (
+                <Box key={data.path}>
+                  <Link href={data.path} target={data.target}>
+                    {data.title}
+                  </Link>
+                </Box>
+              ))}
+            </Stack>
+          </Flex>
         </Container>
         <Box
-          borderTopWidth={1}
+          borderTopWidth={10}
           borderStyle={"solid"}
           borderColor={"gray.200"}
           maxW="8xl"
@@ -88,17 +53,9 @@ export default function Footer() {
             justify={{ base: "center", md: "space-between" }}
             align={{ base: "center", md: "center" }}
           >
-            <Text>© 2024 TechTonic Community. All rights reserved</Text>
+            <Text>© 2024 TechTonic Community.</Text>
             <Stack direction={"row"} spacing={6}>
-              <SocialButton label={"Twitter"} href={"#"}>
-                <FaTwitter />
-              </SocialButton>
-              <SocialButton label={"YouTube"} href={"#"}>
-                <FaYoutube />
-              </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
-              </SocialButton>
+              <Socials />
             </Stack>
           </Container>
         </Box>

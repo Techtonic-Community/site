@@ -1,5 +1,3 @@
-import { features } from "../../data/feature";
-import Container from "../../utility/HeaderContainer";
 import {
   Box,
   Center,
@@ -9,19 +7,22 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import { features } from "../../data/feature";
+import Container from "../../utility/HeaderContainer";
 
 const Features = () => {
   return (
     <Center width="full">
       <Box>
         <Container
-          title="For developers. For Managers. For everyone."
+          title="For Students. For Professional. For everyone."
           text="Get all the opportunities in one place. Join the community and grow together. Connect with proffessionals and grow."
         />
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 3 }}
           spacing="8"
           maxWidth="8xl"
+          pt="5"
         >
           {features.map(({ title, description, Icon }, index) => (
             <Box

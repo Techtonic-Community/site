@@ -7,7 +7,8 @@ const Hero = () => {
     <Stack
       position="relative"
       maxW="container.md"
-      py="32"
+      pt="32"
+      pb="5"
       mx="auto"
       spacing="6"
       align="center"
