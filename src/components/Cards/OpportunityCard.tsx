@@ -16,7 +16,7 @@ const OpportunityCard = () => {
     <Box
       position="relative"
       bgGradient={
-        "linear(150.28deg, rgb(38, 34, 71) 4.24%, white 40.96%, rgb(38, 34, 71) 99%)"
+        "linear(150.28deg, rgb(38, 34, 71) 4.24%, gray 40.96%, rgb(38, 34, 71) 99%)"
       }
       borderRadius="lg"
       key="da"

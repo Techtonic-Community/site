@@ -1,5 +1,5 @@
 import Wrapper from "../../provider/wrapper";
-import Container from "../../components/utility/HeaderContainer";
+import Container from "../../components/utility/Container";
 import { Box, Text } from "@chakra-ui/react";
 
 const page = () => {

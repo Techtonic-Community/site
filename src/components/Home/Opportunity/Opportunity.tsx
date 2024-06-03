@@ -1,6 +1,6 @@
 import { Box, Button, SimpleGrid, Text } from "@chakra-ui/react";
 import OpportunityCard from "../../Cards/OpportunityCard";
-import Container from "../../utility/HeaderContainer";
+import Container from "../../utility/Container";
 import { Link } from "../../utility/Link";
 
 const Opportunity = () => {
