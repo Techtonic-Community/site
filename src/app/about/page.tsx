@@ -5,7 +5,7 @@ import { Box, Text } from "@chakra-ui/react";
 const page = () => {
   return (
     <Wrapper>
-      <Box py="10">
+      <Box py="5">
         <Container
           subtitle="Who are We?"
           title="About TechTonic Community"
@@ -16,7 +16,7 @@ const page = () => {
           title=""
           text="Our Vission is simple, we dream to help professionals and students to pursue their career without scamming and with right knowledge and right path."
         />
-        <Container subtitle="" title="Let's Connect together.." text=""/>
+        <Container subtitle="" title="Let's Connect together.." text="" />
       </Box>
     </Wrapper>
   );

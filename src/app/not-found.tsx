@@ -1,13 +1,13 @@
-import Wrapper from "../provider/wrapper";
-import Container from "../components/utility/HeaderContainer";
-import { Link } from "../components/utility/Link";
 import { Box, Center } from "@chakra-ui/react";
 import { RiArrowRightLine } from "react-icons/ri";
+import Container from "../components/utility/HeaderContainer";
+import { Link } from "../components/utility/Link";
+import Wrapper from "../provider/wrapper";
 
 export default function NotFound() {
   return (
     <Wrapper>
-      <Box py="12rem" mt="40">
+      <Box py="12rem" marginTop={{ base: "0", lg: "40" }}>
         <Container
           title="Page Not Found"
           subtitle="Sorry,"

@@ -32,16 +32,16 @@ export const navsocial = [
   {
     title: "GitHub",
     Icon: RiGithubFill,
-    path: "https://github.com/PalashCoder",
+    path: "https://github.com/Techtonic-Community/site",
   },
   {
     title: "LinkedIn",
     Icon: RiLinkedinBoxFill,
-    path: "https://github.com/PalashCoder",
+    path: "https://www.linkedin.com/company/techtoniccommunity",
   },
   {
     title: "Telegram",
     Icon: RiTelegramFill,
-    path: "https://github.com/PalashCoder",
+    path: "https://t.me/techtoniccommunity",
   },
 ];

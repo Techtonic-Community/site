@@ -1,12 +1,12 @@
-import { Providers } from "../provider/provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Providers } from "../provider/provider";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Techtonic Community | Home",
+  title: "Techtonic Community",
   description: "A Community fo all.",
   icons: {
     icon: ["./favicon.ico"],
