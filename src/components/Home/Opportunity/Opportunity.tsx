@@ -23,7 +23,12 @@ const Opportunity = () => {
         ))}
       </SimpleGrid>
       <Text textAlign="center" pt="10">
-        <Button variant="outline">
+        <Button
+          variant="outline"
+          colorScheme="gray"
+          color="white"
+          _hover={{ colorScheme: "black" }}
+        >
           <Link href="/opportunities">Show All</Link>
         </Button>
       </Text>

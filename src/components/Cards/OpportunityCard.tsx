@@ -1,12 +1,12 @@
 import {
-    Box,
-    Button,
-    Code,
-    Flex,
-    Heading,
-    Spacer,
-    Stack,
-    Text,
+  Box,
+  Button,
+  Code,
+  Flex,
+  Heading,
+  Spacer,
+  Stack,
+  Text,
 } from "@chakra-ui/react";
 import { RiArrowRightLine } from "react-icons/ri";
 import { Link } from "../utility/Link";
@@ -39,7 +39,13 @@ const OpportunityCard = () => {
         <Text color="gray.500">Location</Text>
         <Text color="gray.500">Salary</Text>
         <Text color="gray.500">Contract</Text>
-        <Button rightIcon={<RiArrowRightLine />} variant="outline" colorScheme="gray">
+        <Button
+          rightIcon={<RiArrowRightLine />}
+          variant="outline"
+          colorScheme="gray"
+          color="white"
+          _hover={{ colorScheme: "black" }}
+        >
           <Link href="/opportunities">Apply Now</Link>
         </Button>
       </Stack>

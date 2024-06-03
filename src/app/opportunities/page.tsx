@@ -32,7 +32,14 @@ const page = () => {
           ))}
         </SimpleGrid>
         <Text textAlign="center" pt="10">
-          <Button variant="outline">Show More..</Button>
+          <Button
+            variant="outline"
+            colorScheme="gray"
+            color="white"
+            _hover={{ colorScheme: "black" }}
+          >
+            Show More..
+          </Button>
         </Text>
       </Box>
     </Wrapper>
