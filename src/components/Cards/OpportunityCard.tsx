@@ -39,7 +39,7 @@ const OpportunityCard = () => {
         <Text color="gray.500">Location</Text>
         <Text color="gray.500">Salary</Text>
         <Text color="gray.500">Contract</Text>
-        <Button rightIcon={<RiArrowRightLine />} variant="outline">
+        <Button rightIcon={<RiArrowRightLine />} variant="outline" colorScheme="gray">
           <Link href="/opportunities">Apply Now</Link>
         </Button>
       </Stack>

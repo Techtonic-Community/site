@@ -1,7 +1,7 @@
 import OpportunityCard from "@/src/components/Cards/OpportunityCard";
 import Container from "@/src/components/utility/Container";
 import Wrapper from "@/src/provider/wrapper";
-import { Box, Button, Flex, Input, SimpleGrid } from "@chakra-ui/react";
+import { Box, Button, Flex, Input, SimpleGrid, Text } from "@chakra-ui/react";
 
 const page = () => {
   return (
@@ -27,10 +27,13 @@ const page = () => {
           pt="5"
           px="0"
         >
-          {Array.from({ length: 20 }).map((_, index) => (
+          {Array.from({ length: 16 }).map((_, index) => (
             <OpportunityCard key={index} />
           ))}
         </SimpleGrid>
+        <Text textAlign="center" pt="10">
+          <Button variant="outline">Show More..</Button>
+        </Text>
       </Box>
     </Wrapper>
   );
