@@ -1,7 +1,8 @@
 {
-  "name": "mytonic",
+  "name": "techtonic",
   "version": "0.1.0",
   "private": true,
+  "author": "Palash Das",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
